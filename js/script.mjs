@@ -69,6 +69,8 @@ function generatePaginationLinks(totalContacts) {
 
 // get the total number of contacts and generate pagination links
 const totalContacts = users.length;
+const totalContactsContainer = document.querySelector('.total-contacts');
+totalContactsContainer.innerHTML = totalContacts;
 generatePaginationLinks(totalContacts);
 
 // display the first page of contacts by default
