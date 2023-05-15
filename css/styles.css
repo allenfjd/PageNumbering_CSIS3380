@@ -67,7 +67,7 @@ ol, ul {
     display: inline;
   }
 
-    /* .pagination li a{
+    .pagination li a{
       border: 1px solid #eaeaea;
       border-radius: 5px;
       padding: 3px 8px;
@@ -79,4 +79,4 @@ ol, ul {
     .pagination li a:hover{
       background-color: #4ba6c3;
       color: #fff;
-    } */
+    }
