@@ -76,8 +76,13 @@ ol, ul {
       color: #4ba6c3;
     }
 
-    .pagination-link a.active,
+    a.pagination-link:hover{
+      background-color: #4ba6c3;
+      color: #fff;
+    } 
+
+    /* .pagination-link a.active,
     .pagination-link a:hover{
       background-color: #4ba6c3;
       color: #fff;
-    }
+    } */
