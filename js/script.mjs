@@ -61,6 +61,14 @@ function generatePaginationLinks(totalContacts) {
   for (const link of paginationLinks) {
     link.addEventListener('click', event => {
       event.preventDefault();
+      //this next line of code is responsible for extracting the value of the data-page attribute from the clicked pagination link and converting it to an integer
+      /*
+      event refers to the click event object that is passed as an argument to the event listener callback function.
+      event.target refers to the DOM element that triggered the event, in this case, the clicked pagination link.
+      dataset is a property of DOM elements that provides access to custom data attributes. In this case, dataset.page refers to the data-page attribute value of the clicked link.
+      parseInt() is a JavaScript function that parses a string argument and returns an integer. It converts the data-page attribute value, which is initially a string, into an integer value.
+      Finally, the integer value is assigned to the pageIndex constant, which is then used to determine which page of contacts should be displayed.
+      */
       const pageIndex = parseInt(event.target.dataset.page);
       generateContactList(pageIndex);
     });
